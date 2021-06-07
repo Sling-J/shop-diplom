@@ -55,13 +55,8 @@ const initialState = {
       price: 900
     },
   ]
-}
+};
 
-const products = (state = initialState, action) => {
-  switch (action.type) {
-    default:
-      return state
-  }
-}
+const products = (state = initialState) => state;
 
 export default products

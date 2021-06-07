@@ -4,6 +4,7 @@ const ProductCard = ({
   title,
   img,
   price,
+  onAdding,
   className,
 }) => {
   return (
@@ -29,7 +30,7 @@ const ProductCard = ({
       </div>
 
       <div className="product-card-buy">
-        <button className="product-card-buy__button">
+        <button className="product-card-buy__button" onClick={onAdding}>
           Добавить в корзину
         </button>
       </div>
